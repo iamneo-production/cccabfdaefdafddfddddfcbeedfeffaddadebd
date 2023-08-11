@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 11.951 s <<< FAILURE! - in TestSuite
-ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.beforeTest  Time elapsed: 11.699 s  <<< FAILURE!
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 13.406 s <<< FAILURE! - in TestSuite
+ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.beforeTest  Time elapsed: 13.151 s  <<< FAILURE!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '4.1.0', revision: '87802e897b'
@@ -11,9 +11,9 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
 Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
 Capabilities {}
 	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.beforeTest(AppTest.java:21)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/127.0.0.1:4444
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/127.0.0.1:8283
 	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.beforeTest(AppTest.java:21)
-Caused by: java.net.ConnectException: Connection refused: localhost/127.0.0.1:4444
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:4444
+Caused by: java.net.ConnectException: Connection refused: localhost/127.0.0.1:8283
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8283
 Caused by: java.net.ConnectException: Connection refused
 

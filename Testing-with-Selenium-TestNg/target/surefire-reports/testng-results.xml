@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="4" passed="0" failed="0" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-11T13:36:22 UTC" name="Suite" finished-at="2023-08-11T13:36:33 UTC" duration-ms="10973">
+  <suite started-at="2023-08-11T13:50:40 UTC" name="Suite" finished-at="2023-08-11T13:50:52 UTC" duration-ms="12251">
     <groups>
     </groups>
-    <test started-at="2023-08-11T13:36:22 UTC" name="Test" finished-at="2023-08-11T13:36:33 UTC" duration-ms="10973">
+    <test started-at="2023-08-11T13:50:40 UTC" name="Test" finished-at="2023-08-11T13:50:52 UTC" duration-ms="12251">
       <class name="ai.iamneo.testing.Testing_Selenium_TestNg.AppTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-11T13:36:22 UTC" name="beforeTest" finished-at="2023-08-11T13:36:33 UTC" duration-ms="10869" status="FAIL">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-11T13:50:40 UTC" name="beforeTest" finished-at="2023-08-11T13:50:52 UTC" duration-ms="12204" status="FAIL">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -57,7 +57,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/127.0.0.1:4444
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/127.0.0.1:8283
 at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:80)
 at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
 at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
@@ -91,7 +91,7 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
 ... 32 more
-Caused by: java.net.ConnectException: Connection refused: localhost/127.0.0.1:4444
+Caused by: java.net.ConnectException: Connection refused: localhost/127.0.0.1:8283
 at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
 at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
 at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
@@ -113,7 +113,7 @@ at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExe
 at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 at java.base/java.lang.Thread.run(Thread.java:829)
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:4444
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8283
 Caused by: java.net.ConnectException: Connection refused
 at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
 at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
@@ -133,7 +133,7 @@ at java.base/java.lang.Thread.run(Thread.java:829)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="backPage()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-11T13:36:33 UTC" name="backPage" finished-at="2023-08-11T13:36:33 UTC" duration-ms="0" status="SKIP">
+        <test-method signature="backPage()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-11T13:50:52 UTC" name="backPage" finished-at="2023-08-11T13:50:52 UTC" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -183,7 +183,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/127.0.0.1:4444
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/127.0.0.1:8283
 at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:80)
 at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
 at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
@@ -217,7 +217,7 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
 ... 32 more
-Caused by: java.net.ConnectException: Connection refused: localhost/127.0.0.1:4444
+Caused by: java.net.ConnectException: Connection refused: localhost/127.0.0.1:8283
 at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
 at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
 at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
@@ -239,7 +239,7 @@ at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExe
 at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 at java.base/java.lang.Thread.run(Thread.java:829)
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:4444
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8283
 Caused by: java.net.ConnectException: Connection refused
 at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
 at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
@@ -259,7 +259,7 @@ at java.base/java.lang.Thread.run(Thread.java:829)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- backPage -->
-        <test-method signature="currentURL()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-11T13:36:33 UTC" name="currentURL" finished-at="2023-08-11T13:36:33 UTC" duration-ms="0" status="SKIP">
+        <test-method signature="currentURL()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-11T13:50:52 UTC" name="currentURL" finished-at="2023-08-11T13:50:52 UTC" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -309,7 +309,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/127.0.0.1:4444
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/127.0.0.1:8283
 at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:80)
 at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
 at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
@@ -343,7 +343,7 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
 ... 32 more
-Caused by: java.net.ConnectException: Connection refused: localhost/127.0.0.1:4444
+Caused by: java.net.ConnectException: Connection refused: localhost/127.0.0.1:8283
 at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
 at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
 at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
@@ -365,7 +365,7 @@ at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExe
 at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 at java.base/java.lang.Thread.run(Thread.java:829)
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:4444
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8283
 Caused by: java.net.ConnectException: Connection refused
 at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
 at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
@@ -385,7 +385,7 @@ at java.base/java.lang.Thread.run(Thread.java:829)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- currentURL -->
-        <test-method signature="iamNeo()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-11T13:36:33 UTC" name="iamNeo" finished-at="2023-08-11T13:36:33 UTC" duration-ms="0" status="SKIP">
+        <test-method signature="iamNeo()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-11T13:50:52 UTC" name="iamNeo" finished-at="2023-08-11T13:50:52 UTC" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -435,7 +435,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/127.0.0.1:4444
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/127.0.0.1:8283
 at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:80)
 at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
 at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
@@ -469,7 +469,7 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
 ... 32 more
-Caused by: java.net.ConnectException: Connection refused: localhost/127.0.0.1:4444
+Caused by: java.net.ConnectException: Connection refused: localhost/127.0.0.1:8283
 at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
 at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
 at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
@@ -491,7 +491,7 @@ at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExe
 at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 at java.base/java.lang.Thread.run(Thread.java:829)
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:4444
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8283
 Caused by: java.net.ConnectException: Connection refused
 at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
 at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
@@ -511,7 +511,7 @@ at java.base/java.lang.Thread.run(Thread.java:829)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iamNeo -->
-        <test-method signature="nextPage()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-11T13:36:33 UTC" name="nextPage" finished-at="2023-08-11T13:36:33 UTC" duration-ms="0" status="SKIP">
+        <test-method signature="nextPage()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-11T13:50:52 UTC" name="nextPage" finished-at="2023-08-11T13:50:52 UTC" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -561,7 +561,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/127.0.0.1:4444
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/127.0.0.1:8283
 at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:80)
 at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
 at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
@@ -595,7 +595,7 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
 ... 32 more
-Caused by: java.net.ConnectException: Connection refused: localhost/127.0.0.1:4444
+Caused by: java.net.ConnectException: Connection refused: localhost/127.0.0.1:8283
 at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
 at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
 at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
@@ -617,7 +617,7 @@ at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExe
 at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 at java.base/java.lang.Thread.run(Thread.java:829)
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:4444
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8283
 Caused by: java.net.ConnectException: Connection refused
 at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
 at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
@@ -637,7 +637,7 @@ at java.base/java.lang.Thread.run(Thread.java:829)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nextPage -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-11T13:36:33 UTC" name="afterTest" finished-at="1970-01-01T00:00:00 UTC" duration-ms="-1691760993066" status="SKIP">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-11T13:50:52 UTC" name="afterTest" finished-at="1970-01-01T00:00:00 UTC" duration-ms="-1691761852538" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
